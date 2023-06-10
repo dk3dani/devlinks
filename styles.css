@@ -6,26 +6,26 @@
 
 :root {
   --text-color: #ffffff;
-  --bg-url: url('./assets/bg-mobile-dark.jpg');
+  --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url('./assets/moon-light.svg');
+  --switch-bg-url: url(./assets/moon-light.svg);
 }
 
 .light {
   --text-color: #000000;
-  --bg-url: url('./assets/bg-mobile-light.jpg');
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: url('./assets/sun.svg');
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
-  background: var(--bg-url) no-repeat top/cover;
+  background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
 
@@ -48,7 +48,6 @@ body * {
 
 #profile img {
   width: 112px;
-  margin: auto;
 }
 
 #profile p {
@@ -89,7 +88,7 @@ body * {
   display: block;
   width: 64px;
   height: 24px;
-  background: #ffffff var(--surface-color);
+  background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -141,8 +140,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: var(--highlight-color);
-  padding: 16px;
+  background: var(--highlight-color);  
 }
 
 footer {
@@ -154,11 +152,11 @@ footer {
 /* media */
 @media(min-width:700px) {
   :root {
-    --bg-url: url('./assets/bg-desktop-dark.jpg');
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
   .light {
-    --bg-url: url('./assets/bg-mobile-light.jpg');
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
 
